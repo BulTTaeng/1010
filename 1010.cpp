@@ -1,5 +1,4 @@
 #include <iostream>
-#include <limits.h>
 
 using namespace std;
 
@@ -35,6 +34,9 @@ int main() {
   for(int i =0; i<t; i++){
     cout << dp[N[i]][M[i]] << endl;
   }
+
+  free(N);
+  free(M);
 
   return 0;
   
